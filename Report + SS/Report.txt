@@ -1,3 +1,5 @@
+Classes:
+
 Created Abstract Class [Person]
 Created template class Queue
 Which contains Virtual Print Info
@@ -11,7 +13,11 @@ Which contains Virtual Print Info
    
    We have 5 mechanics and 30 customers each with different names and ids[Mechanic]
    
-   In int main we sort the appoinments [using the overloaded operands and buble sorting in the main itself]
+   
+   
+   In int main:
+   
+   we sort the appoinments [using the overloaded operands and buble sorting in the main itself]
    to which was first then send it to a for loop to be set into the mechanic if he is available
    
    all input is taken from files for the Mechanic and Customer respectfully
