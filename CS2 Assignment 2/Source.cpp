@@ -246,7 +246,7 @@ if (xyz == 'Y') {
 }
 else exit(0);
 
-
+queue<Customer> CustomerQ;
 
 fstream ListOfAppointment;
 	ListOfAppointment.open("ListOfAppointments.txt");
@@ -257,8 +257,13 @@ for (int j = 0 ; j < 30; j++) {
 	{
 		if (Mechanics[i].isAvailable(Customers[j].getAP())) {
 			
+			CustomerQ.push(Customers[j]);
+			cout << endl << "Customer " << j << " Succesfully Enqueued" << endl;
 				Mechanics[i].setAP(Customers[j].getAP());
 				Customers[j].setMID(Mechanics[i].ID);
+			cout << "Customer " << j << " Succesfully Dequeued" << endl;
+				CustomerQ.pop();
+				
 
 				// Checking availability then setting appointment from Customer To Mechanic
 
